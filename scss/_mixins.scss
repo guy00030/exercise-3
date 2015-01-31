@@ -26,3 +26,11 @@
   white-space: normal;
   overflow: visible;
 }
+
+@mixin button($bg-color, $color, $hover-color){
+  color: $color;
+    &:hover{
+      background-color: $hover-color;
+  }
+}
+

@@ -49,14 +49,19 @@ header {
     text-align: center;
     border-bottom: 1px silid $light-grey;
     text-decoration: none;
-  }
-  &:first-child a{
+    }
+    &:first-child a{
     border-top: 1px solid $light-grey;
     }
   }
 }
 
-.toggle-btn 
+.navigation {
+ @include button($light-grey, #ccc, $text-color);
+}
+
+
+.toggle-btn,
 .close-btn {
   color: text-color;
   height: 40px;
@@ -96,13 +101,14 @@ header {
 
         &[data-state="slide-open"]{
           overflow: visible;
+        }
 
    } // .site-wrapper
 
 
    // Navigation Styles
    .slide-menu {
-    positiona: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -112,4 +118,16 @@ header {
 
    }
 
+} // @media
+
+@media only screen and (min-width: 60em){
+  .toggle-btn,
+  .close-btn{
+    display: none;
+  }
+  .slide-menu{
+    position: static;
+    right: auto;
+  }
 }
+

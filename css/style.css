@@ -119,30 +119,37 @@ header {
     .navigation ul li:first-child a {
       border-top: 1px solid #ccc; }
 
-/* line 60, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
-.toggle-btn .close-btn {
+/* line 59, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+.navigation {
+  color: #ccc; }
+  /* line 32, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/mixins */
+  .navigation:hover {
+    background-color: #222; }
+
+/* line 65, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+.toggle-btn, .close-btn {
   color: text-color;
   height: 40px;
   width: 40px; }
-  /* line 64, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
-  .toggle-btn .close-btn i {
+  /* line 69, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+  .toggle-btn i, .close-btn i {
     border: 1px solid #222;
     padding: 0.5em; }
-  /* line 69, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
-  .toggle-btn .close-btn span {
+  /* line 74, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+  .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
 
 @media only screen and (max-width: 60em) {
-  /* line 79, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+  /* line 84, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 84, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+    /* line 89, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -151,20 +158,33 @@ header {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 93, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
-    .site-wrapper[data-state="slide-open"] {
+    /* line 98, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+    .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
-              transform: translateX(-100%);
+              transform: translateX(-100%); }
+    /* line 102, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+    .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 102, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+  /* line 110, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
   .slide-menu {
-    positiona: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     bottom: 0;
     right: -100%;
     min-height: 600px; }
+ }
+
+@media only screen and (min-width: 60em) {
+  /* line 125, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+  .toggle-btn, .close-btn {
+    display: none; }
+
+  /* line 128, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
+  .slide-menu {
+    position: static;
+    right: auto; }
  }
