@@ -115,8 +115,20 @@ header {
     bottom: 0;
     right: -100%;
     min-height: 600px;
+    
+    a {
+      color: #4a0162;
+      background-color: orange;
 
+      &:hover {
+        color: #fff;
+        background-color: #CCC;
+      }
+    }
    }
+
+
+
 
 } // @media
 
@@ -130,4 +142,20 @@ header {
     right: auto;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
