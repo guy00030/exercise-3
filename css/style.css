@@ -171,11 +171,11 @@ header {
     min-height: 600px; }
     /* line 119, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
     .slide-menu a {
-      color: #4a0162;
-      background-color: orange; }
+      color: #fff;
+      background-color: #dd003e; }
       /* line 123, /Users/shawnag/Desktop/3rd Year/Semester 6/Web Dev/exercise-3/scss/components/main */
       .slide-menu a:hover {
-        color: #fff;
+        color: #4a0162;
         background-color: #CCC; }
  }
 
