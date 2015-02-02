@@ -28,6 +28,10 @@ body{
   }
 }
 
+h1 {
+  color: #6b0303;
+}
+
 header {
   padding: 0 1em;
   position: relative;
@@ -115,13 +119,14 @@ header {
     bottom: 0;
     right: -100%;
     min-height: 600px;
+    font-family: helvetica, sans-serif;
     
     a {
       color: #fff;
       background-color: #dd003e;
 
       &:hover {
-        color: #018599;
+        color: #016199;
         background-color: #CCC;
       }
     }
